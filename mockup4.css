@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #aed3cf;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 20px; 
+    width: 700px; 
+    padding: 20px;
+    background-color: #FFFFFF;
+    height: 598px;
+}
+.title-container {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+.firstname-field {
+    grid-row: 1/2 ;
+    grid-column: 1/2;
+    align-self: end;
+    justify-self: start;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    grid-row-gap: 0px;
+    display: grid;
+    width: 100%;
+}
+input, select,
+textarea {
+    border-radius: 3px;
+    border-color: #d2d2d2;
+    border: 1px solid #d2d2d2;
+}
+.lastname-field {
+    grid-row: 1/2 ;
+    grid-column: 2/3;
+    align-self: end;
+    justify-self: start;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    grid-row-gap: 0px;
+    display: grid;
+    width: 100%;
+}
+
+.email-field {
+    grid-row: 2/3 ;
+    grid-column: 1/2;
+    align-self: end;
+    justify-self: start;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    grid-row-gap: 0px;
+    display: grid;
+    width: 100%;
+}
+.job-field {
+    grid-row: 2/3 ;
+    grid-column: 2/3;
+    align-self: end;
+    justify-self: start;
+    width: 100%;
+}
+
+.address-field {
+    grid-row: 3;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.city-field {
+    grid-row: 4;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+}
+
+.pincode-field {
+    grid-row 4 ;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+}
+.date-field {
+    grid-row: 5;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+}
+
+.cv-field {
+    grid-row: 5;
+    grid-column: 2;
+    align-self: end;
+    width: 100%;
+}
+.button-field {
+    grid-row: 6;
+    grid-column: 2;
+    align-self: center;
+    justify-self: end;
+}
+.button-field button {
+    width: 175px;
+    height: 35px;
+    background-color: #1b52df;
+    color: #FFFEFE;
+}
+
+select {
+    width: 100%;
+}
